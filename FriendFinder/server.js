@@ -1,12 +1,12 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
-var htmlRoutes = require('./app/routing/html-routes');
-var apiRoutes = require('./app/routing/api-routes');
+var htmlRoutes = require('/app/routing/htmlRoutes');
+var apiRoutes = require('/app/routing/apiRoutes');
 
 // Express set up
 var app = express();
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 8080;
 
 // Body parser
 app.use(bodyParser.json());
